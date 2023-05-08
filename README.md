@@ -10,7 +10,7 @@ or if you use yarn
 ```
 yarn add node-fetch express morgan
 ```
-about Morgan this just logs server requests - if you're not gonna look at it, dont install this
+about Morgan, this just logs server requests - if you're not gonna look at it, dont install this
 ```
 node proxy.js
 ```

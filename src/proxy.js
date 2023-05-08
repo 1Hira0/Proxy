@@ -2,6 +2,7 @@
 import express from 'express';
 import morgan from "morgan";
 import fetch from 'node-fetch';
+import cors from "cors"
 const app = express();    //initializing server
 
 const PORT = 3000;        //if already in use, change it
@@ -47,7 +48,7 @@ AAAAAAA                   AAAAAAAaaaaaaaaaa  aaaarrrrrrr            aaaaaaaaaa  
     }
 });*/
 
-app.get("/fetch", async (req, res) => { //idk why but .post doesnt work. If it does for you, do tell me by issuing this line
+app.get("/fetch",cors({origin:"http://localhost:5173"}) ,async (req, res) => { //idk why but .post doesnt work. If it does for you, do tell me by issuing this line
     const response = await fetch(req.query.url) //send your fetching url as a url query parameter(the ones that come after ?) as /?url=https://forbidden.site/69/420
     res.send(await response.text())// change the .text() if you want, I didn't
 })

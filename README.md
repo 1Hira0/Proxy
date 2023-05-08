@@ -15,3 +15,4 @@ about Morgan, this just logs server requests - if you're not gonna look at it, d
 node proxy.js
 ```
 should do the trick
+#AGAIN, NO RESPONSIBILITY IS HELD IF ANY CODE IS USED FROM THIS BY ANYONE OTHER THAN THE OWNER OF THIS REPOSITORY

@@ -4,11 +4,11 @@ All instructions given inside files with bunch of(and i mean lots of it) comment
 just copy the code from [proxy.js](https://github.com/1Hira0/Proxy/blob/master/src/proxy.js)
 and 
 ```
-npm i node-fetch express morgan
+npm i node-fetch express cors morgan 
 ```
 or if you use yarn
 ```
-yarn add node-fetch express morgan
+yarn add node-fetch express cors morgan
 ```
 about Morgan, this just logs server requests - if you're not gonna look at it, dont install this
 ```
